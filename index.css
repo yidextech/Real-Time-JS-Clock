@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div.clock{
+    width: 60%;  
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20%;
+    background-color: rgb(145, 75, 20);
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 20px;
+
+
+}
+div.watch{
+    background-color: rgb(200, 200, 200);
+    color: hsl(0, 100%, 50%);
+    border-radius: 10% 20%;
+    box-shadow: 2px 3px 4px 4px rgba(75, 75, 75, 0.75);
+    animation-name: clockAnimation;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+}
+@keyframes clockAnimation {
+    25%{
+        color: hsl(0, 100%, 40%);
+    }
+    50%{
+        color: hsl(0, 100%, 60%);
+    }
+    75%{
+        color: hsl(0, 100%, 40%);
+    }
+    100%{
+        color: hsl(0, 100%, 50%);
+    }
+}
+@media (max-width:700px){
+    div.clock{
+        margin-top: 50%;
+        width: 90%;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:350px){
+    div.clock{
+        margin-top: 50%;
+        width: 100%;
+        font-size: 1rem;
+    }
+}
