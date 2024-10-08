@@ -4,7 +4,6 @@
 
 ## Welcome! 👋
 
-## I created a Recipe Page
+## I created a real time clock using HTML, CSS and JS
 
-## Challenge from [Frontend mentor](https://www.frontendmentor.io)
 
